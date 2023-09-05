@@ -1,0 +1,97 @@
+/*
+=============== 
+Fonts
+===============
+*/
+/* Import Google font - Poppins & Noto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+// @import url("https://fonts.g:::::::::::::::::::::::::::::::::::::::::::::::::::::::oogleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600&display=swap");
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+    --primary-color: linear-gradient(135deg, #43cbff 0%, #9708cc 0%, #43cbff 100%, #9708cc 100%);
+    --black-color: linear-gradient(to right top, #161616 20%, #c7f043 80%);
+    --white-color: #fff;
+    --gray-color: #707070;
+    --grays-color: #333;
+    --purple-color: linear-gradient(to right top, #161616 10%, #6559ec 90%);
+    --green-color: #c9e27a;
+    --purpleV-color: rgb(116, 107, 218);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+body {
+    min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    background: linear-gradient(#ffa4c2, #a9d8ff );
+}
+::selection{
+    color: #fff;
+    background: #FCBA7F;
+}
+.wrapper{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    max-width: 365px;
+    background: #fff;
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+    text-align: center;
+    &.hide{
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+    }
+    img{
+        max-width: 90px;
+    }
+    .content{
+        margin-top: 10px;
+        header{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p{
+            color: #858585;
+            margin: 5px 0 20px 0;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px;
+                background: #FCBA7F;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    transform: scale(0.94);
+                }
+            }
+            a{
+                color: #FCBA7F;
+            }
+            .item{
+                margin: 0 10px;
+            }
+        }
+    }
+}
